@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 import {
   HeaderButton,
   HeaderButtonsContainer,
@@ -10,15 +12,19 @@ export function Header() {
   return (
     <HeaderContainer>
       <div className="container">
-        <img src={brandLogo} alt="" />
+        <NavLink to="/">
+          <img src={brandLogo} alt="" />
+        </NavLink>
         <HeaderButtonsContainer>
           <HeaderButton variant="purple">
             <MapPin size={20} weight="fill" />
             Porto Alegre, RS
           </HeaderButton>
-          <HeaderButton variant="yellow">
-            <ShoppingCart size={20} weight="fill" />
-          </HeaderButton>
+          <NavLink to="/complete-order">
+            <HeaderButton variant="yellow">
+              <ShoppingCart size={20} weight="fill" />
+            </HeaderButton>
+          </NavLink>
         </HeaderButtonsContainer>
       </div>
     </HeaderContainer>

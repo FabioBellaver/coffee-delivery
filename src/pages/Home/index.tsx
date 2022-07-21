@@ -8,5 +8,5 @@ export function HomePage() {
       <Intro />
       <OurCoffees />
     </HomeContainer>
-  )
+  );
 }

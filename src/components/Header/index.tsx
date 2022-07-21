@@ -7,8 +7,11 @@ import {
 } from "./styles";
 import brandLogo from "../../assets/brand-logo.svg";
 import { MapPin, ShoppingCart } from "phosphor-react";
+import { useCart } from "../../hooks/useCart";
 
 export function Header() {
+  const { cartQuantity } = useCart();
+
   return (
     <HeaderContainer>
       <div className="container">
@@ -22,6 +25,7 @@ export function Header() {
           </HeaderButton>
           <NavLink to="/complete-order">
             <HeaderButton variant="yellow">
+              {cartQuantity >= 1 && <span>{cartQuantity}</span>}
               <ShoppingCart size={20} weight="fill" />
             </HeaderButton>
           </NavLink>

@@ -11,6 +11,11 @@ export const HeaderContainer = styled.header`
   top: 0;
   left: 0;
   z-index: 5;
+
+  img {
+    user-select: none;
+  }
+  
   > div {
     display: flex;
     align-items: center;

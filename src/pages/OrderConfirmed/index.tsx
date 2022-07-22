@@ -1,14 +1,15 @@
+import { useLocation, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { RegularText, TitleText } from "../../components/Typography";
+import { paymentMethods } from "../CompleteOrder/components/CompleteOrderForm/PaymentMethodOptions";
+import { InfoWithIcon } from "../../components/InfoWithIcon";
+import { OrderData } from "../CompleteOrder";
+import { useTheme } from "styled-components";
+
 import { OrderConfirmedContainer, OrderDetailsContainer } from "./styles";
 
-import illustration from "../../assets/illustration.png";
 import { Clock, CurrencyDollar, MapPin } from "phosphor-react";
-import { useTheme } from "styled-components";
-import { InfoWithIcon } from "../../components/InfoWithIcon";
-import { useLocation, useNavigate } from "react-router-dom";
-import { OrderData } from "../CompleteOrder";
-import { paymentMethods } from "../CompleteOrder/components/CompleteOrderForm/PaymentMethodOptions";
-import { useEffect } from "react";
+import illustration from "../../assets/illustration.png";
 
 interface LocationType {
   state: OrderData;

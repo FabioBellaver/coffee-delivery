@@ -43,7 +43,7 @@ export const PaymentMethodOptionsContainer = styled.div`
 
   > p {
     grid-column: span 3;
-    color: ${({theme}) => theme.colors["base-error"]};
+    color: ${({ theme }) => theme.colors["base-error"]};
     font-size: 0.875rem;
   }
 `;

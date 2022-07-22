@@ -1,6 +1,7 @@
 import { coffees } from "../../../../coffees-data/data";
 import { TitleText } from "../../../../components/Typography";
 import { CoffeeCard } from "../CoffeeCard";
+
 import { CoffeeList, OurCoffeesContainer } from "./styles";
 
 export function OurCoffees() {

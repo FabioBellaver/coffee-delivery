@@ -1,6 +1,8 @@
 import { RegularText, TitleText } from "../../../../components/Typography";
 import { QuantityInput } from "../../../../components/QuantityInput";
 import { formatMoney } from "../../../../utils/formatMoney";
+import { useCart } from "../../../../hooks/useCart";
+import { useState } from "react";
 
 import {
   AddCartWrapper,
@@ -11,8 +13,6 @@ import {
   Tags,
 } from "./styles";
 import { ShoppingCart } from "phosphor-react";
-import { useCart } from "../../../../hooks/useCart";
-import { useState } from "react";
 
 export interface Coffee {
   id: number;
@@ -70,10 +70,10 @@ export function CoffeeCard({ coffee }: CoffeeProps) {
           </TitleText>
         </div>
         <AddCartWrapper>
-          <QuantityInput 
-          onIncrease={handleIncrease}
-          onDecrease={handleDecrease}
-          quantity={quantity}
+          <QuantityInput
+            onIncrease={handleIncrease}
+            onDecrease={handleDecrease}
+            quantity={quantity}
           />
           <button onClick={handleAddToCart}>
             <ShoppingCart size={22} weight="fill" />

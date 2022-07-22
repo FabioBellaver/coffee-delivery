@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import { RegularText } from "../../../../components/Typography";
+
 import { SectionTitleContainer } from "./styles";
 
 interface SectionTitleProps {

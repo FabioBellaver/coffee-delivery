@@ -1,10 +1,11 @@
-import { CurrencyDollar, MapPinLine } from "phosphor-react";
-import { useTheme } from "styled-components";
 import { TitleText } from "../../../../components/Typography";
 import { SectionTitle } from "../SectionTitle";
 import { AddressForm } from "./AddressForm";
 import { PaymentMethodOptions } from "./PaymentMethodOptions";
+
+import { useTheme } from "styled-components";
 import { CompleteOrderFormContainer, FormSectionContainer } from "./styles";
+import { CurrencyDollar, MapPinLine } from "phosphor-react";
 
 export function CompleteOrderForm() {
   const { colors } = useTheme();

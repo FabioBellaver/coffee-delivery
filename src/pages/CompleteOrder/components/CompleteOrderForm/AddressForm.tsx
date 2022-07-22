@@ -1,5 +1,6 @@
 import { useFormContext } from "react-hook-form";
 import { Input } from "../../../../components/Input";
+
 import { AddressFormContainer } from "./styles";
 
 interface ErrorsType {
@@ -53,7 +54,12 @@ export function AddressForm() {
         {...register("city")}
         error={errors.city?.message}
       />
-      <Input placeholder="UF" {...register("uf")} error={errors.uf?.message} maxLength={2}/>
+      <Input
+        placeholder="UF"
+        {...register("uf")}
+        error={errors.uf?.message}
+        maxLength={2}
+      />
     </AddressFormContainer>
   );
 }

@@ -1,4 +1,5 @@
 import { forwardRef, InputHTMLAttributes, ReactNode } from "react";
+
 import { PaymentMethodInputContainer, ContentContainer } from "./styles";
 
 type PaymentMethodInputProps = InputHTMLAttributes<HTMLInputElement> & {

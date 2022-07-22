@@ -1,14 +1,16 @@
-import { Trash } from "phosphor-react";
 import { QuantityInput } from "../../../../components/QuantityInput";
 import { RegularText } from "../../../../components/Typography";
+
 import { CartItem } from "../../../../contexts/CartContext";
 import { useCart } from "../../../../hooks/useCart";
 import { formatMoney } from "../../../../utils/formatMoney";
+
 import {
   ActionsContainer,
   CoffeeCartCardContainer,
   RemoveButton,
 } from "./styles";
+import { Trash } from "phosphor-react";
 
 interface CoffeeCartCardProps {
   coffee: CartItem;

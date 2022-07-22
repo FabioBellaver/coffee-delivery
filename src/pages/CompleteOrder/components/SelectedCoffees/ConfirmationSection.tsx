@@ -2,6 +2,7 @@ import { Button } from "../../../../components/Button";
 import { RegularText } from "../../../../components/Typography";
 import { useCart } from "../../../../hooks/useCart";
 import { formatMoney } from "../../../../utils/formatMoney";
+
 import { ConfirmationSectionContainer } from "./styles";
 
 const deliveryPrice = 3.5;
@@ -32,7 +33,11 @@ export function ConfirmationSection() {
           {formattedCartTotal}
         </RegularText>
       </div>
-      <Button text="Confirmar Pedido" disabled={cartQuantity <= 0} type="submit" />
+      <Button
+        text="Confirmar Pedido"
+        disabled={cartQuantity <= 0}
+        type="submit"
+      />
     </ConfirmationSectionContainer>
   );
 }

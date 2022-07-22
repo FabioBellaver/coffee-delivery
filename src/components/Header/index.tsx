@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import { useCart } from "../../hooks/useCart";
 
 import {
   HeaderButton,
@@ -7,7 +8,6 @@ import {
 } from "./styles";
 import brandLogo from "../../assets/brand-logo.svg";
 import { MapPin, ShoppingCart } from "phosphor-react";
-import { useCart } from "../../hooks/useCart";
 
 export function Header() {
   const { cartQuantity } = useCart();
